@@ -75,7 +75,7 @@
               Место для ваших воспоминаний о начале обучения.
             </p>
             <div class="card__like-button-container">
-              <button class="card__icon-button" aria-labelledby="html-1">
+              <button type="button" class="card__icon-button" aria-labelledby="html-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="like-icon"
@@ -566,6 +566,7 @@
       </section>
 
       <button
+        type="button"
         class="button save-button"
         onclick="window['dialog-id'].showModal()"
         aria-controls="dialog-id"
@@ -578,7 +579,7 @@
         >
           <use href="./svg/floppy.svg#floppy"/>
         </svg>
-        <span class="button__text">Сохранить на память</span>
+        <span class="button__text">Сохранить на&nbsp;память</span>
       </button>
     </main>
 
@@ -594,7 +595,7 @@
           </svg>
           <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
         </div>
-        <form>
+        <form method="dialog">
           <button
             class="button ok-button"
             onclick="window['dialog-id'].close()"
